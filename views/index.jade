@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  .container-fluid
+      h1 NG Quest
+      #progress-info-bar: .block(data-ng-include="'partials/progress-info-panel.html'")
+      #main: .block(data-ng-view)

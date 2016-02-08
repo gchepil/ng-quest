@@ -1,0 +1,440 @@
+[
+  {
+    "id" : 1,
+    "body":"The AngularJS team describes AngularJS as a...",
+    "variants":[
+		"structural framework for dynamic web apps",
+		"client-side technology, written entirely in JavaScript. It works with the long-established technologies of the web (HTML, CSS, and JavaScript) to make the development of web apps easier and faster than ever before.",
+		"framework that is primarily used to build single-page web applications"
+	],
+    "correctIndex":[1],
+    "nextId":"2"
+  },
+  {
+    "id" : "2",
+    "body":"Due to the nature of JavaScript itself, it’s considered a best practice in Angular to bind ...?",
+    "variants":[
+      "only all Model variables which can be used inside View to $scope inside Controllers",
+      "all variables which are used in different Controllers to $rootScope to transfer it between Controllers",
+      "references in the Views by an attribute on an object, rather than the raw object itself"
+    ],
+    "correctIndex":[3],
+    "nextId":"3"
+  },
+  {
+    "id": "3",
+    "body":"Using modules in AngularJS gives us a lot of advantages, such as?",
+    "variants":[
+      "Making tests easier to write and keeping them clean so as to more easily target isolated functionality",
+      "Making it easy to share code between applications",
+      "Allowing our app to load different parts of the code in any order"
+    ],
+    "correctIndex":[1,2,3],
+    "nextId":"4"
+  },
+  {
+    "id": "4",
+    "body":"What relation is between $scopes in AngularJS?",
+    "variants":[
+      "Scopes are isolated and doesn't know about each other",
+      "Scopes are arranged in a hierarchical structure that mimics the DOM",
+      "$rootScope is the eventual parent of all $scope objects"
+    ],
+    "correctIndex":[2,3],
+    "nextId":"5"
+  },
+  {
+    "id": "5",
+    "body":"Through Angular, we can use different types of markup in a template. These types include the following?",
+    "variants":[
+      "Form controls: user input validation controls",
+      "Value bindings: the template syntax {{ }} binds expressions to the view",
+      "Filters: formatting functions that are available in the view"
+    ],
+    "correctIndex":[1,2,3],
+    "nextId":"6"
+  },
+  {
+    "id": "6",
+    "body":"It is considered a best-practice to name our controllers as:",
+    "variants":[
+      "[Name]Controller",
+      "[Name]Ctrl",
+      "[Name]"
+    ],
+    "correctIndex":[1],
+    "nextId":"7"
+  },
+  {
+  "id": "7",
+  "body":"Which Angular service compile a string with markup into an interpolation function?",
+  "variants":[
+    "$compile",
+    "$interpolate",
+    "$parse"
+  ],
+  "correctIndex":[2],
+  "nextId":"8"
+},
+  {
+    "id": "8",
+    "body":"Which Angular service converts Angular expression into a function?",
+    "variants":[
+      "$compile",
+      "$interpolate",
+      "$parse"
+    ],
+    "correctIndex":[3],
+    "nextId":"9"
+  },
+  {
+    "id": "9",
+    "body":"Which Angular service compiles an HTML string or DOM into a template and produces a template function, which can then be used to link scope and the template together?",
+    "variants":[
+      "$compile",
+      "$interpolate",
+      "$parse"
+    ],
+    "correctIndex":[1],
+    "nextId":"10"
+  },
+  {
+  "id": "10",
+  "body":" NgModelController $parsers is:",
+  "variants":[
+    "A collection of validators that are applied whenever the model value changes.",
+    "Array of functions to execute, as a pipeline, whenever the model value changes.",
+    "Array of functions to execute, as a pipeline, whenever the control reads value from the DOM"
+  ],
+  "correctIndex":[3],
+  "nextId":"11"
+},{
+  "id": "11",
+  "body":"NgModelController $formatters is:",
+  "variants":[
+    "A collection of validators that are applied whenever the model value changes.",
+    "Array of functions to execute, as a pipeline, whenever the model value changes.",
+    "Array of functions to execute, as a pipeline, whenever the control reads value from the DOM"
+  ],
+  "correctIndex":[2],
+  "nextId":"12"
+},{
+  "id": "12",
+  "body":"NgModelController $validators is:",
+  "variants":[
+    "A collection of validators that are applied whenever the model value changes.",
+    "Array of functions to execute, as a pipeline, whenever the model value changes.",
+    "Array of functions to execute, as a pipeline, whenever the control reads value from the DOM"
+  ],
+  "correctIndex":[1],
+  "nextId":"13"
+},
+  {
+  "id": "13",
+  "body":"What is an execution order of NgModelController $parsers and $formatters?",
+  "variants":[
+    "Value goes through $parsers array and then through $formatters array",
+    "Value goes through $formatters  array and then through $parsers array",
+    "Value goes only through $formatters  array when ngModel was changed, and only through $parsers array when input value was changed "
+  ],
+  "correctIndex":[1],
+  "nextId":"14"
+},
+  {
+    "id": "14",
+    "body":"What letter should we pass to 'restrict' property if we want our directive to be invoked if it is an comment?",
+    "variants":[
+      "K",
+      "M",
+      "C "
+    ],
+    "correctIndex":[2],
+    "nextId":"15"
+  },
+  {
+    "id": "15",
+    "body":"if we set scope property in object that we pass in Directive constructor like: {myUrl: '@someAttr'}",
+    "variants":[
+      "Set the value of our directive’s private $scope.myUrl property to the value provided by the attribute some-attr.",
+      "Set the value of our directive’s private $scope.@someAttr property to the value provided by the attribute my-url.",
+      "Create 2-way binding  directive’s private $scope.myUrl property to the value provided by the attribute some-attr"
+    ],
+    "correctIndex":[1],
+    "nextId":"16"
+  },
+  {
+  "id": "16",
+  "body":"What letter should we pass to 'restrict' property if we want our directive to be invoked if it is an comment?",
+  "variants":[
+    "K",
+    "M",
+    "C "
+  ],
+  "correctIndex":[2],
+  "nextId":"17"
+  },
+  {
+    "id": "17",
+    "body":"What does this transclude option in directive do, exactly?",
+    "variants":[
+      "Transclude makes the contents of a directive with this option have access to the scope outside of the directive rather than inside",
+      "Transclude makes the contents of a directive with this option have access to the scope inside of the directive rather than outside",
+      "Transclude allow ro use custom html inside your directive"
+    ],
+    "correctIndex":[1,3],
+    "nextId":"18"
+  },
+  {
+    "id": "18",
+    "body":"Which phase does not present in AngularJS Life Cycle?",
+    "variants":[
+      "compile",
+      "interpolation",
+      "link "
+    ],
+    "correctIndex":[2],
+    "nextId":"19"
+  },
+  {
+    "id": "19",
+    "body":"Which method of Angular Module can  be used for configuring your App?",
+    "variants":[
+      "config",
+      "construct",
+      "run"
+    ],
+    "correctIndex":[1,3],
+    "nextId":"20"
+  },
+  {
+    "id": "20",
+    "body":"Which method of Angular Module can  be used for service creation?",
+    "variants":[
+      "factory",
+      "constant",
+      "provider"
+    ],
+    "correctIndex":[1,2,3],
+    "nextId":"21"
+  },
+  {
+    "id": "21",
+    "body":"In the $http service configuration object map of strings or objects which will be serialized with the paramSerializer and appended as GET parameters has name ...",
+    "variants":[
+      "search",
+      "data",
+      "params "
+    ],
+    "correctIndex":[3],
+    "nextId":"22"
+  },
+  {
+    "id": "22",
+    "body":"In the $http service configuration object a function used to prepare the string representation of request parameters (specified as an object) has name ...",
+    "variants":[
+      "transformRequest",
+      "paramSerializer",
+      "transformResponse"
+    ],
+    "correctIndex":[2],
+    "nextId":"23"
+  },
+  {
+    "id": "23",
+    "body":"The default set of $resource does not contain following method?",
+    "variants":[
+      "update",
+      "query",
+      "remove"
+    ],
+    "correctIndex":[1],
+    "nextId":"24"
+  },
+  {
+    "id": "24",
+    "body":"If we have multiple promises that we want to combine into a single promise we can use?",
+    "variants":[
+      "$q.all()",
+      "$q.combine()",
+      "$q.compose()"
+    ],
+    "correctIndex":[1],
+    "nextId":"25"
+  },
+  {
+    "id": "25",
+    "body":"To pass an event downwards (from parent scopes to child scopes), we use the .... function.",
+    "variants":[
+      "$emit",
+      "$broadcast",
+      "$apply"
+    ],
+    "correctIndex":[2],
+    "nextId":"26"
+  },
+  {
+    "id": "26",
+    "body":"To dispatch an event to travel up the scope chain (from child scopes to parent scopes), we’ll use the .... function.",
+    "variants":[
+      "$emit",
+      "$broadcast",
+      "$apply"
+    ],
+    "correctIndex":[1],
+    "nextId":"27"
+  },
+  {
+    "id": "27",
+    "body":"$digest loop include next major components",
+    "variants":[
+      "$scope list",
+      "$watch list",
+      "$evalAsync list"
+    ],
+    "correctIndex":[2,3],
+    "nextId":"28"
+  },
+  {
+    "id": "28",
+    "body":"How many times Angular runs through $watch list for 1 digest before error will be thrown?",
+    "variants":[
+      "10",
+      "50",
+      "100"
+    ],
+    "correctIndex":[1],
+    "nextId":"29"
+  },
+  {
+    "id": "29",
+    "body":"The callback listener function($scope.$watch() function second argument) called ...",
+    "variants":[
+      "every $digest loop",
+      "when the current value of the watchExpression and the previous value of the expression are not equal",
+      "on any change of watchExpression"
+    ],
+    "correctIndex":[2],
+    "nextId":"30"
+  },
+  {
+    "id": "30",
+    "body":"$scope.$watch() function return...",
+    "variants":[
+      "void",
+      "boolean (true if value was added to watch list or false if some error occur)",
+      "deregistration function"
+    ],
+    "correctIndex":[3],
+    "nextId":"31"
+  },
+  {
+    "id": "31",
+    "body":"If a directive calls $evalAsync() directly?",
+    "variants":[
+      "it will run after Angular has manipulated the DOM,but before the browser renders",
+      "it will run before Angular has manipulated the DOM and before the browser renders",
+      "it will run after Angular has manipulated the DOM,and after the browser renders"
+    ],
+    "correctIndex":[1],
+    "nextId":"32"
+  },
+  {
+    "id": "32",
+    "body":"$sceDelegateProvider is used for ...",
+    "variants":[
+      "enable/disable the $sce subsystem from running in our app",
+      "set/unset Trusted Context Types",
+      "whitelisting or blacklisting domains"
+    ],
+    "correctIndex":[3],
+    "nextId":"33"
+  },
+  {
+    "id": "33",
+    "body":"$sceProvider is used for ...",
+    "variants":[
+      "enable/disable the $sce subsystem from running in our app",
+      "set/unset Trusted Context Types",
+      "whitelisting or blacklisting domains"
+    ],
+    "correctIndex":[1],
+    "nextId":"34"
+  },
+  {
+    "id": "34",
+    "body":"The $sce library support by default built-in context type ...",
+    "variants":[
+      "URL",
+      "RESOURCE_URL",
+      "JS"
+    ],
+    "correctIndex":[1,2,3],
+    "nextId":"35"
+  },
+  {
+    "id": "35",
+    "body":"Which library Angular use for cross browser dom manipulation by default?",
+    "variants":[
+      "AngDom",
+      "jQuery",
+      "jqLite"
+    ],
+    "correctIndex":[3],
+    "nextId":"36"
+  },
+  {
+    "id": "36",
+    "body":"Chrome extension developed by the Angular team at Google that integrates  very nicely as a debugging tool for Angular apps has name?",
+    "variants":[
+      "Edge",
+      "ng-debug",
+      "Batarang"
+    ],
+    "correctIndex":[3],
+    "nextId":"37"
+  },
+  {
+    "id": "37",
+    "body":"what feature help to improve ng-repeat performance up to 40%",
+    "variants":[
+      "lazy-render",
+      "limit to",
+      "track by"
+    ],
+    "correctIndex":[3],
+    "nextId":"38"
+  },
+  {
+    "id": "38",
+    "body":"Which method of scope run $digest loop of all application?",
+    "variants":[
+      "$scope.$call()",
+      "$scope.$apply()",
+      "$scope.$digest()"
+    ],
+    "correctIndex":[2],
+    "nextId":"39"
+  },
+  {
+    "id": "39",
+    "body":"Which method of scope  runs the digest loop on the specific scope that called $digest() and all of its children.",
+    "variants":[
+      "$scope.$call()",
+      "$scope.$apply()",
+      "$scope.$digest()"
+    ],
+    "correctIndex":[3],
+    "nextId":"40"
+  },
+  {
+    "id": "40",
+    "body":"The third argument in the $watch() function tells Angular",
+    "variants":[
+      "to run watch only in case watched value was changed",
+      "to watch the object using deep comparison",
+      "do not call watch on initialization stage "
+    ],
+    "correctIndex":[1],
+    "nextId":"1"
+  }
+]

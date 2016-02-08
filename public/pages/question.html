@@ -1,0 +1,24 @@
+<span class="col-sm-2"></span>
+<h3 class="col-sm-8"> {{question.body}}</h3>
+<div class="clearfix"></div>
+
+<span class="col-sm-3"></span>
+<div class="form-group col-sm-6"> 
+	<div class="checkbox" data-ng-repeat="variant in question.displayVariants track by $index">
+		<label class="{{variant.color}}"><input data-ng-model="variant.selected" type="checkbox"> {{variant.text}}</label>
+	</div>
+</div>
+<div class="clearfix"></div>
+<div class="controls-wrapper" data-ng-if="!questionAnswered && !quizFinished">
+    <span class="col-sm-2"></span>
+    <a type="button" prevent-click href="#" data-ng-click="checkAnswer()" class="btn btn-success btn-lg col-sm-3">Answer</a>
+    <span class="col-sm-2"></span>
+    <a type="button" prevent-click href="#" data-ng-click="skipQuestion()" class="btn btn-lg btn-warning col-sm-3">Skip</a>
+    <div class="clearfix"></div>
+</div>
+<div class="controls-wrapper" data-ng-if="questionAnswered || quizFinished">
+	<span class="col-sm-4"></span>
+    <a type="button" prevent-click href="#" data-ng-click="nextQuestion()" data-ng-if="questionAnswered" class="btn btn-lg btn-warning col-sm-4">Next</a>
+    <a type="button" href="#/result" data-ng-if="quizFinished"  class="btn btn-lg btn-warning col-sm-4">Result</a>
+    <span class="col-sm-4"></span>
+</div>

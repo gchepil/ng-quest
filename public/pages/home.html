@@ -1,0 +1,27 @@
+<div class="content-wrapper" data-ng-init="init()">
+    <h3> Hello  {{name}}, Welcome to NG-Quest</h3>
+    <br/>
+    <br/>
+    <br/>
+    <form class="form-horizontal" data-ng-cloak data-ng-hide="isOldUser">
+        <div class="row">
+            <div class="form-group col-sm-12 form-group-lg">
+                <label class="control-label col-sm-5"  for="name">Please provide your name:</label>
+                <div class="col-sm-6">
+                    <input class="form-control input-lg" id="name" type="text" data-ng-model="name" required="" placeholder="name..."/>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </form>
+</div>
+<div class="controls-wrapper" data-ng-hide="isOldUser" data-ng-cloak>
+    <a type="button" data-ng-click="startQuiz(name)" data-ng-disabled="!name" class="btn btn-success btn-block btn-lg">Lets Start</a>
+</div>
+<div class="controls-wrapper" data-ng-show="isOldUser" data-ng-cloak>
+    <span class="col-sm-2"></span>
+    <a type="button" prevent-click href="#" data-ng-click="startQuiz(name)" class="btn btn-success btn-lg col-sm-3">Start new Quiz</a>
+    <span class="col-sm-2"></span>
+    <a type="button" prevent-click href="#" data-ng-click="recoverQuiz(name)" class="btn btn-lg btn-warning col-sm-3">Recover previous Quiz</a>
+    <div class="clearfix"></div>
+</div>
