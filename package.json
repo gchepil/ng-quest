@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "nodemon ./bin/www"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
@@ -19,7 +19,9 @@
     "winston": "^3.1.0"
   },
   "main": "app.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^1.18.6"
+  },
   "author": "Greg Chepil",
   "license": "ISC"
 }
