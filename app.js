@@ -1,11 +1,12 @@
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
-var logger = require('morgan');
+var morgan = require('morgan');
 var session = require('express-session')
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var config = require('./config');
+var logger = require('./libs/log');
 
 var routes = require('./routes/index');
 var quest = require('./routes/quest');
@@ -18,11 +19,11 @@ app.set('view engine', 'pug');
 
 // uncomment after placing your favicon in /public
 app.use(favicon(__dirname + '/favicon.ico'));
-//app.use(logger('dev'));
+
 if (app.get('env') == 'development') {
-    app.use(logger('dev'));
+    app.use(morgan('combined', { stream: logger.stream }));
 } else {
-    app.use(logger('default'));
+    app.use(morgan('default'));
 }
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
